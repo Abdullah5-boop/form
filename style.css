@@ -1,5 +1,8 @@
 
-
+:root{
+    --formwidthvaluepadding:50px;
+    --inputcontainerwidth:40vw
+}
 .container{
     width: 95vw;
     height: 100vh;
@@ -12,13 +15,14 @@
 input{
     padding: 9px;
     width:  32vw;
+    margin-left: 5px;
 }
 
 .inputcontainer{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40vw;
+    width:var(--inputcontainerwidth);
     height: 90vh;
     border: 1px solid;
     box-shadow: 3px 3px 3px 3px ;
@@ -28,9 +32,9 @@ input{
 
     display: flex;
     justify-content: center;
-    /* align-items: flex-end; */
-    padding:50px ;
-    /* background-color: aqua; */
+
+    padding:var(--formwidthvaluepadding) ;
+    
 }
 .heading{
     font-size: 20px;
@@ -62,15 +66,40 @@ input{
 }
 @media only screen and (max-width: 600px)
 {
-    input{
-        padding: 9px;
-        width:  10vw;
+    :root{
+        --formwidthvaluepadding:10px;
+        --inputcontainerwidth:100vw
+    
+
     }
-    .container{
-        box-sizing: border-box;
+    textarea{
+        width: 100%;
     }
-	.inputcontainer{
-        width: 100vw;
-        background-color: aqua;
+    
+}
+@media only screen and (max-width: 1534px)
+{
+    :root{
+        --formwidthvaluepadding:10px;
+        --inputcontainerwidth:100vw
+    
+
     }
+    textarea{
+        width: 100%;
+    }
+    
+}
+@media only screen and (max-width: 1000px)
+{
+    :root{
+        --formwidthvaluepadding:10px;
+        --inputcontainerwidth:100vw
+    
+
+    }
+    textarea{
+        width: 100%;
+    }
+    
 }
