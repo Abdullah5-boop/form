@@ -3,6 +3,33 @@
     --formwidthvaluepadding:50px;
     --inputcontainerwidth:40vw
 }
+#title  {
+    text-align: center
+}
+ .btn{
+   display: flex;
+   justify-content: center;
+}
+button{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius:10px ;
+}
+#description{
+    font-size: 18px;
+    
+}
+ #name-label{
+    font-weight: bold;
+}
+#number-label {
+    font-weight: bold;
+}
+ #email-label {
+    font-weight: bold;
+}
 .container{
     width: 95vw;
     height: 100vh;
@@ -10,6 +37,7 @@
     justify-content: center;
     align-items:center;
     box-sizing: content-box;
+   
 }
 
 input{
@@ -26,7 +54,7 @@ input{
     height: 90vh;
     border: 1px solid;
     box-shadow: 3px 3px 3px 3px ;
-    /* background-color: aqua; */
+    background-color:aliceblue
 }
 .inputcontainer form{
 
@@ -57,6 +85,8 @@ input{
 
  
 }
+
+
 .radiobtn input{
     width: 25px;
 }

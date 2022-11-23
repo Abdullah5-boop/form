@@ -10,62 +10,79 @@
 </head>
 
 <body>
+    <div>
+
+        <h1 id="title">Survey form</h1>
+    </div>
     <section class="container">
+        
         <div class="inputcontainer">
-            <form action="">
+            
+            <form id="survey-form" action="">
                 <div class="">
                    
                     <div class="formating">
-                        <span class="heading"> Name </span>
-                        <input placeholder="Enter your name" type="text">
+                        <label id="name-label" class="heading"> Name </label>
+                       
+                        
+                        
+                        <input required id="name" placeholder="Enter your name" type="text">
                     </div>
                     <div class="formating">
-                        <span class="heading"> Email </span>
-                        <input placeholder="Enter your name" type="text">
+                        <label id="email-label" class="heading"> Email </label>
+                        <input required id="email" placeholder="Enter your name" type="email">
                     </div>
                     <div class="formating">
-                        <span class="heading"> age </span>
-                        <input placeholder="Enter your name" type="text">
+                        <label id="number-label" class="heading"> Age </label>
+                        <input id="number" min="1" max="11" placeholder="Enter your name" type="number">
                     </div>
                    
                     <div class="selector">
                         <span class="heading"> which option besy describes your current role? </span>
-                        <select name="" id="">
+                        <select id="dropdown" name="" id="">
                             <option selected disabled value="">Choos the option </option>
                             <option value="">Student</option>
                             <option value="">Employee</option>
                             <option value="">Child</option>
                         </select>
-
                     </div>
                     <div>
                         <h1 class="heading">How likely is that you would recommend freeCodeCamp</h1>
                         <div class="radiobtn">
-                            <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                            <input type="checkbox" id="javascript" name="fav_language" value="JavaScript">
                             <label for="">Student</label>
                         </div>
                         <div class="radiobtn">
-                            <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                            <input type="checkbox" id="javascript" name="fav_language" value="JavaScript">
                             <label for="">job holder </label>
                         </div>
                         <div class="radiobtn">
-                            <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                            <input type="checkbox" id="javascript" name="fav_language" value="JavaScript">
                             <label for="">Nothing </label>
                         </div>
-
                     </div>
                     <div>
-                        <h1>
-                            Any comments or suggestions?
-                        </h1>
-                        <textarea name="" id="" cols="80" rows="10"></textarea>
+                        <h1>What is your salary </h1>
+                        <input class="radiobtn" type="radio" name="price" value="thousand">Thousand<br>
+                        <input class="radiobtn" type="radio" name="price" value="lakh">Lakh<br>
+                        <input class="radiobtn" type="radio" name="price" value="crore">Crore
                     </div>
-
-
+                    <div>
+                        <p id="description">
+                            Any comments or suggestions?
+                        </p>
+                        <textarea name="" id="" cols="80" rows="10"></textarea>
+                        
+                    </div>
+                    <div  class="btn">
+                        <button value="submit" type="submit" id="submit">Submit</button>
+                    </div>
             </form>
         </div>
+       
 
     </section>
+
 </body>
 
 </html>
